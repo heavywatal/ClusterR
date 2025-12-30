@@ -891,6 +891,7 @@ namespace clustR {
           Rcpp::stop("invalid seed_mode");
         }
 
+        static_cast<void>(status);
         // if(status == false) {
         //
         //   Rcpp::Rcout << "clustering failed" << std::endl;
@@ -1558,6 +1559,7 @@ namespace clustR {
           Rcpp::stop("Invalid seed_mode OR dist_mode. Valid 'seed_modes' are : 'static_subset', 'random_subset', 'static_spread' and 'random_spread'. Valid 'dist_modes' are : 'eucl_dist' and 'maha_dist'.");
         }
 
+        static_cast<void>(status);
         // if(status == false) {
         //   Rcpp::Rcout << "learning failed" << std::endl;
         // }
